@@ -15,8 +15,7 @@ $F1::
   return
   
 $F7::
-  loop
-    {
+  loop {
     Random, time_key, 60, 100
     SetKeyDelay, %time_key%
     
@@ -63,7 +62,7 @@ $F7::
     PixelSearch, Px, Py, %xMin%, %yMin%, %xMax%, %yMax%, %fishColor%, %colorVariation%, fast
     Py := Py + 5
     Px := Px + 5
-    Mousemove, %Px%,%Py%,50
+    Mousemove, %Px%, %Py%, 50
     PixelGetColor target_color, %Px%, %Py%, RGB
     
     time1:=A_Tickcount
